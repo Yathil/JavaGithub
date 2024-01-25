@@ -37,3 +37,27 @@ Aquí hay un ejemplo de cómo se realiza una operación de suma en la calculador
 int result = calculator.add(5, 10);
 System.out.println(result); // Imprime: 15
 ```
+
+## Ejemplo de Código 2
+
+## Cambios realizados por oliver para probar el git
+
+Ejemplo de como pedir los datos al usuario:
+
+```java
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Introduce el primer número:");
+int num1 = scanner.nextInt();
+
+System.out.println("Introduce el segundo número:");
+int num2 = scanner.nextInt();
+
+System.out.println("Introduce el operador (+, -, *, /):");
+String operador = scanner.next();
+
+App app = new App();
+int resultado = app.calculadora(num1, num2, operador);
+
+System.out.println("El resultado es: " + resultado);
+```
